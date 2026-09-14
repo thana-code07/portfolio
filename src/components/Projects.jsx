@@ -1,0 +1,124 @@
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.6 },
+};
+
+const staggerContainer = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+export const Projects = () => {
+  return (
+    <motion.section
+      id="projects"
+      className="projects"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+    >
+      <motion.h2
+        variants={fadeInUp}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
+        My Projects
+      </motion.h2>
+      <motion.div
+        className="project-grid"
+        variants={staggerContainer}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
+        <motion.a
+          href="https://anime-review-blog.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-card"
+          variants={fadeInUp}
+          whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          aria-label="Open Personal Blog project in a new tab"
+        >
+          <motion.div
+            className="project-image"
+            style={{ backgroundImage: "url('/projects/personal-blog.png')" }}
+            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+          />
+          <h3> Personal Blog</h3>
+          <p>
+            A modern SaaS platform built with Next.js and OpenAI integration,
+            featuring real-time AI-powered content generation and analytics.
+          </p>
+          <div className="project-tech">
+            <span>React</span>
+            <span>Express</span>
+            <span>TailwindCSS</span>
+          </div>
+        </motion.a>
+
+        <motion.a
+          href="https://courseflow-eta.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-card"
+          variants={fadeInUp}
+          whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          aria-label="Open CourseFlow project in a new tab"
+        >
+          <motion.div
+            className="project-image"
+            style={{
+              backgroundImage: "url('/projects/courseflow.png')",
+            }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+          />
+          <h3>CourseFlow</h3>
+          <p>
+            A comprehensive social media management dashboard with analytics,
+            scheduling, and engagement tracking features.
+          </p>
+          <div className="project-tech">
+            <span>Next.js</span>
+            <span>Supabase</span>
+            <span>Omise</span>
+          </div>
+        </motion.a>
+
+        <motion.div
+          className="project-card"
+          variants={fadeInUp}
+          whileHover={{ y: -10, transition: { duration: 0.2 } }}
+        >
+          <motion.div
+            className="project-image"
+            style={{
+              backgroundImage: "url('/projects/stopwatch.png')",
+            }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+          />
+          <h3>Productivity Timer</h3>
+          <p>
+            A sleek productivity timer application with customizable work
+            sessions, statistics tracking, and dark mode support.
+          </p>
+          <div className="project-tech">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>TailwindCSS</span>
+          </div>
+        </motion.div>
+      </motion.div>
+    </motion.section>
+  );
+};
