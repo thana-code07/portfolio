@@ -8,14 +8,6 @@ const fadeInUp = {
   transition: { duration: 0.6 },
 };
 
-const staggerContainer = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
 export const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -72,6 +64,7 @@ export const Contact = () => {
         message: "",
       });
     } catch (error) {
+      console.error("Email sending failed:", error);
       setFormStatus({
         submitting: false,
         success: false,
