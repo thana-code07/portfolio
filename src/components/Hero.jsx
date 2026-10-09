@@ -93,7 +93,7 @@ export const Hero = () => {
                 padding: "2rem",
                 height: "100%",
                 borderRadius: "20px",
-                background: "rgba(30, 41, 59, 0.8)",
+                background: "rgba(22, 48, 68, 0.82)",
                 backdropFilter: "blur(10px)",
                 marginBottom: 50,
               }}
