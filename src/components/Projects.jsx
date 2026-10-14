@@ -95,6 +95,9 @@ export const Projects = () => {
         </motion.a>
 
         <motion.div
+          href="https://courseflow-eta.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="project-card"
           variants={fadeInUp}
           whileHover={{ y: -10, transition: { duration: 0.2 } }}
@@ -102,20 +105,20 @@ export const Projects = () => {
           <motion.div
             className="project-image"
             style={{
-              backgroundImage: "url('/projects/stopwatch.png')",
+              backgroundImage: "url('/projects/welcome.png')",
             }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           />
-          <h3>Productivity Timer</h3>
+          <h3>B-Chat</h3>
           <p>
-            A sleek productivity timer application with customizable work
-            sessions, statistics tracking, and dark mode support.
+            Real-time chat application featuring instant messaging and online
+            status tracking using Flutter and Socket.io.
           </p>
           <div className="project-tech">
-            <span>React</span>
-            <span>TypeScript</span>
-            <span>TailwindCSS</span>
+            <span>Flutter</span>
+            <span>MongoDB</span>
+            <span>Socket.io</span>
           </div>
         </motion.div>
       </motion.div>

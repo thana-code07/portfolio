@@ -47,7 +47,9 @@ export const Hero = () => {
             Fullstack Developer
           </motion.h2>
           <motion.p className="hero-description" variants={fadeInUp}>
-          Junior Full-Stack Developer who has built and deployed web apps with React, Next.js, Node.js, and Express — including authentication, REST APIs, and database-backed features.
+            Junior Full-Stack Developer who has built and deployed web apps with
+            React, Next.js, Node.js, and Express — including authentication,
+            REST APIs, and database-backed features.
           </motion.p>
 
           <motion.div className="cta-buttons" variants={staggerContainer}>
@@ -73,7 +75,10 @@ export const Hero = () => {
             <motion.a href="https://github.com/thana-code07" target="_blank">
               <i className="fab fa-github"> </i>
             </motion.a>
-            <motion.a href="https://www.linkedin.com/in/thanathat-best/" target="_blank">
+            <motion.a
+              href="https://www.linkedin.com/in/thanathat-best/"
+              target="_blank"
+            >
               <i className="fab fa-linkedin"> </i>
             </motion.a>
           </motion.div>
