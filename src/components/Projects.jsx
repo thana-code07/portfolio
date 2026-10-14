@@ -94,7 +94,7 @@ export const Projects = () => {
           </div>
         </motion.a>
 
-        <motion.div
+        <motion.a
           href="https://b-chat-psi.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
@@ -120,8 +120,8 @@ export const Projects = () => {
             <span>MongoDB</span>
             <span>Socket.io</span>
           </div>
-        </motion.div>
-        <motion.div
+        </motion.a>
+        <motion.a
           href="https://neatly-hotel-t9ca.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
@@ -147,7 +147,7 @@ export const Projects = () => {
             <span>Spring Boot</span>
             <span>Java</span>
           </div>
-        </motion.div>
+        </motion.a>
       </motion.div>
     </motion.section>
   );
