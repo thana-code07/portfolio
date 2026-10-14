@@ -40,7 +40,7 @@ export const Projects = () => {
         viewport={{ once: true }}
       >
         <motion.a
-          href="https://anime-review-blog.vercel.app/"
+          href="https://anime-review-blog.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
           className="project-card"
@@ -66,7 +66,7 @@ export const Projects = () => {
         </motion.a>
 
         <motion.a
-          href="https://courseflow-eta.vercel.app/"
+          href="https://courseflow-eta.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
           className="project-card"
@@ -95,7 +95,7 @@ export const Projects = () => {
         </motion.a>
 
         <motion.div
-          href="https://courseflow-eta.vercel.app/"
+          href="https://b-chat-psi.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
           className="project-card"
@@ -119,6 +119,33 @@ export const Projects = () => {
             <span>Flutter</span>
             <span>MongoDB</span>
             <span>Socket.io</span>
+          </div>
+        </motion.div>
+        <motion.div
+          href="https://neatly-hotel-t9ca.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-card"
+          variants={fadeInUp}
+          whileHover={{ y: -10, transition: { duration: 0.2 } }}
+        >
+          <motion.div
+            className="project-image"
+            style={{
+              backgroundImage: "url('/projects/Neatly.png')",
+            }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+          />
+          <h3>Neatly Hotel</h3>
+          <p>
+            Hotel management platform for guests and staff featuring room
+            booking, housekeeping log, and analytics dashboard.
+          </p>
+          <div className="project-tech">
+            <span>Vue.js</span>
+            <span>Spring Boot</span>
+            <span>Java</span>
           </div>
         </motion.div>
       </motion.div>
